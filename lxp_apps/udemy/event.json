@@ -1,0 +1,16 @@
+{
+  "trigger_name_2": "careerhub_get_entity_details",
+  "trigger_name": "careerhub_entity_search_results",
+
+  "app_settings": {
+    "client_id": "",
+    "client_secret": ""
+  },
+
+  "request_data": {
+    "trigger_source": "ch_homepage",
+    "current_user_email": "demo@eightfolddemo-aksingh.com",
+    "limit": 10,
+    "term": "aws"
+  }
+}

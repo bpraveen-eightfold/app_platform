@@ -1,0 +1,5 @@
+Flask==2.2.5
+multidict==6.0.5
+requests<2.29.0
+teams-ai==1.2.2
+urllib3<2.0.0

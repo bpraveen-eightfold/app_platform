@@ -1,0 +1,5 @@
+# Requirements for First Advantage integration (Python 3.12)
+
+# Core dependencies
+requests<2.29.0
+glog

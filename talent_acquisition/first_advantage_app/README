@@ -1,0 +1,16 @@
+  _____ _       _     _    __       _     _      _                  ____  _       _    __                      
+ | ____(_) __ _| |__ | |_ / _| ___ | | __| |    / \   _ __  _ __   |  _ \| | __ _| |_ / _| ___  _ __ _ __ ___  
+ |  _| | |/ _` | '_ \| __| |_ / _ \| |/ _` |   / _ \ | '_ \| '_ \  | |_) | |/ _` | __| |_ / _ \| '__| '_ ` _ \ 
+ | |___| | (_| | | | | |_|  _| (_) | | (_| |  / ___ \| |_) | |_) | |  __/| | (_| | |_|  _| (_) | |  | | | | | |
+ |_____|_|\__, |_| |_|\__|_|  \___/|_|\__,_| /_/   \_\ .__/| .__/  |_|   |_|\__,_|\__|_|  \___/|_|  |_| |_| |_|
+          |___/                                      |_|   |_|                                                 
+
+
+	Thank you for downloading this starter package! 🎉🎉🎉
+
+	There are 2 main files your app needs:
+		- requirements.txt --> list of required pip modules
+		- lambda_function.py --> the file must have this name. Please look inside for more details.
+
+
+	For an in-depth guide, checkout https://docs.google.com/document/d/1EszciUL-XDnExcGkGEcMH1KD5GCdUlT2ueiN79hD3Mg/edit#

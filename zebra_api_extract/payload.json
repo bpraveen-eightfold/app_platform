@@ -1,0 +1,31 @@
+{
+  "app_settings": {
+    "oauth_username": "import@zebra.com",
+    "oauth_password": "",
+    "region": "us",
+    "exporter_config": [
+      {
+        "exporter": [
+          "sftp"
+        ],
+        "entity": "profile",
+        "field": "careerSiteQuestions",
+        "report": "",
+        "id_rsa.pub": "",
+        "id_rsa": "",
+        "hostname": "sftp.eightfold.ai",
+        "username": "zebra",
+        "sftp_path": "smartapply_questionnaire_extract/",
+        "result_fields_separator": ",",
+        "result_filename_prefix": "zebra_candidates_careerSiteQuestions_%D",
+        "exporter_frequency": "DAILY",
+        "extension": "csv",
+        "timestamp_format": "%Y-%m-%d",
+        "suffix": ""
+      }
+    ]
+  },
+
+  "trigger_name": "scheduled_daily",
+  "group_id": "zebra.com"
+}

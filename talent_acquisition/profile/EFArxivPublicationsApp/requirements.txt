@@ -1,0 +1,5 @@
+# add pip modules here
+
+requests
+urllib3
+feedparser

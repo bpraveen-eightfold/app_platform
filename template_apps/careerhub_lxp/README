@@ -1,0 +1,7 @@
+Welcome to the Career Hub LXP starter package! 🎉🎉🎉 Use this starter package as a boilerplate for your Career Hub LXP integration with Eightfold. To learn more about the Eightfold developer platform, read the app platform docs: https://docs.eightfold.ai/sdk-main
+
+There are three main files that you must include in your LXP app:
+		- requirements.txt --> Include list of required pip modules in this file.
+		- lambda_function.py --> Use the same name for this file. This file contains all the triggers that are available for you to use in your assessment app and also shows you some examples on how to handle these triggers. Note that you should modify this file to fit your use case.
+       	- package_ef_app.py --> This file contains the packaging script for your app. Learn more here: https://docs.eightfold.ai/app-platform-basics/packaging-your-app 
+

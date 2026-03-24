@@ -1,0 +1,11 @@
+from __future__ import absolute_import
+
+from teams_notification_types import TeamsNotificationTypes
+import feedback_message_content_handlers
+
+teams_message_handler_registry = {
+    TeamsNotificationTypes.FEEDBACK_REQUESTED._value_: feedback_message_content_handlers.FeedbackRequestContentHandler,
+    TeamsNotificationTypes.FEEDBACK_SUBMITTED._value_: feedback_message_content_handlers.FeedbackSubmitContentHandler,
+    TeamsNotificationTypes.FEEDBACK_REMINDER._value_: feedback_message_content_handlers.FeedbackReminderContentHandler,
+    TeamsNotificationTypes.FEEDBACK_CANCELLED._value_: feedback_message_content_handlers.FeedbackCancelContentHandler
+}

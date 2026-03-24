@@ -1,0 +1,56 @@
+{% set candidate = candidateProfileReviewer %}
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Please provide Interview Feedback on {{candidate.get('fullName')}}",
+          "weight": "bolder",
+          "size": "medium"
+        },
+        {
+          "type": "TextBlock",
+          "text": "Hello",
+          "wrap": true
+        },
+        {
+          "type": "TextBlock",
+          "text": "Please click the Provide Feedback button below to leave a detailed feedback for your recent interview(s).",
+          "wrap": true
+        },
+        {
+          "type": "FactSet",
+          "facts": [
+            {
+              "title": "Position:",
+              "value": "{{position.get('name')}}"
+            }
+          ]
+        },
+        {
+          "type": "TextBlock",
+          "text": "Thanks",
+          "wrap": true
+        },
+        {
+          "type": "TextBlock",
+          "text": "{{requester.get('fullName')}}",
+          "wrap": true
+        }
+      ]
+    },
+    {% include '/templates/candidate_card.txt' %}
+  ],
+  "actions": [
+    {
+      "type": "Action.OpenUrl",
+      "title": "Provide Feedback",
+      "url": "{{feedbackUrl}}"
+    }
+  ]
+}

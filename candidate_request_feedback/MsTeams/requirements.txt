@@ -1,0 +1,4 @@
+glog
+jinja2
+requests
+six

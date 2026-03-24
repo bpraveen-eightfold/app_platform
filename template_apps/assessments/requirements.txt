@@ -1,0 +1,2 @@
+# add any dependency modules that are used in this app here
+requests

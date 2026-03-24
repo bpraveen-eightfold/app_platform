@@ -1,0 +1,3 @@
+Test plan: python -m unittest discover -v tests/
+To run a particular file: python -m unittest discover -v <directory> <filename>
+For example python -m unittest discover -v tests/ test_recommended_course_list.py

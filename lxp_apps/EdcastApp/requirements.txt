@@ -1,0 +1,9 @@
+# add pip modules here
+
+# There are some issues with the requests package, see https://github.com/psf/requests/issues/6432
+# Fix is to pin some older versions
+requests<2.29.0
+urllib3<2.0.0
+pyjwt
+parameterized
+furl

@@ -1,0 +1,94 @@
+{
+  "type": "Container",
+  "items": [
+    {
+      "type": "TextBlock",
+      "text": "[{{candidate.get('fullName')}}](https://{{ reviewer.get('domain') }}/profile/{{ candidate.get('encId') }}?back=/interview_feedback/{% if position.get('positionId') %}&pid={{ position.get('positionId') }}{%endif%})"
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "auto",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "{{candidate.get('title')}}",
+              "wrap": true
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "auto",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "{{candidate.get('location')}}",
+              "wrap": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "{{candidate.get('workExperienceYears')|round|int}} Years Experience"
+    },
+    {% for exp in candidate.get('experience')[:3] %}
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "auto",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "{{exp.get('title')}}",
+              "wrap": true
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "auto",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "{{exp.get('work')}}",
+              "wrap": true
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "auto",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "{% if exp.get('durationMonths') > 12 %}
+                        {{ (exp.get('durationMonths')/12)|round|int }} Years
+                       {% elif exp.get('durationMonths') > 0 %}
+                        {{ exp.get('durationMonths') }} Months
+                       {% endif %}",
+              "wrap": true
+            }
+          ]
+        }
+      ]
+    },
+    {% endfor %}
+    {
+      "type": "TextBlock",
+      "text": "Skills: ",
+      "weight": "bolder",
+      "size": "medium"
+    },
+    {
+      "type": "TextBlock",
+      "text": "{{', '.join(candidate.get('skills')[:10])}}"
+    }
+  ]
+}

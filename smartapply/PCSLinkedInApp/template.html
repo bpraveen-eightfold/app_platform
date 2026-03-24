@@ -1,0 +1,84 @@
+ {% block css %}
+  <style>
+  .linkedin-main-container {
+    height: 400px;
+    width: 100%;
+    border: 0;
+    margin: 0px !important;
+  }
+  .linkedin-embeds-container {
+    margin-top: -10px !important
+  }
+  .linkedin-embed-header {
+    background: white;
+    margin: 0 !important
+  }
+  .linkedin-title-container {
+    text-align: center; 
+    color: rgba(0, 0, 0, 0.60) !important;
+    font-family: Source Sans Pro !important;
+    -webkit-font-smoothing: antialiased !important;
+    font-weight: 400 !important;
+    text-transform: capitalize;
+    margin: 0 !important;
+    position:fixed;
+    z-index:1000;
+    width:100%;
+    background:white
+  }
+  h2 .title {
+    margin: 0 !important;
+    color: rgb(54,71,89);
+    font-weight: 400 !important;
+    height: 50px !important;
+  }
+  .linkedin-app-outer-container {
+    width: 900px;
+    overflow-x: scroll;
+    position: absolute;
+    margin-top: 60px !important
+  }
+  .linkedin-app-inner-container {
+    height: 100%;
+    white-space: nowrap;
+  }
+  .embed-html-container {
+    display: inline-block;
+    width: 350px;
+    padding: 10px;
+    vertical-align:top;
+  }
+  </style>
+ {% endblock %}
+
+ {% block body %}
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
+  <div class='linkedin-main-container'>
+    <div class='linkedin-embeds-container'>
+      <div class='linkedin-embed-header'>
+        <!-- <img src={{data.logo_url}} /> -->
+        <div class='linkedin-title-container'>
+          <h2 class='title'>
+            {{data.title}}
+          </h2>
+          {% if data.subtitle %}
+            <p class='body-text-2 line-clamp line-clamp-1'>
+              {{data.subtitle}}
+            </p>
+          {% endif %}
+        </div>
+      </div>
+      <div class='linkedin-app-outer-container'> 
+        <div class='linkedin-app-inner-container'>
+          {% for post_id in data.post_ids %}
+              <div class='embed-html-container'>
+                  <iframe src='https://www.linkedin.com/embed/feed/update/urn:li:share:{{post_id}}' height='450' width='350' allowfullscreen='' title='Embedded post'></iframe>
+              </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock %}

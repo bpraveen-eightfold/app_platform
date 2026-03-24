@@ -1,0 +1,50 @@
+{% set candidate = candidateProfileReviewer %}
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Feedback request Cancelled for {{candidate.get('fullName')}}",
+          "weight": "bolder",
+          "size": "medium",
+          "color": "attention"
+        },
+        {
+          "type": "TextBlock",
+          "text": "Hello",
+          "wrap": true
+        },
+        {
+          "type": "TextBlock",
+          "text": "The request for you to provide feedback on the candidate below has been cancelled.",
+          "wrap": true
+        },
+        {
+          "type": "FactSet",
+          "facts": [
+            {
+              "title": "Position:",
+              "value": "{{position.get('name')}}"
+            }
+          ]
+        },
+        {
+          "type": "TextBlock",
+          "text": "Thanks",
+          "wrap": true
+        },
+        {
+          "type": "TextBlock",
+          "text": "{{requester.get('fullName')}}",
+          "wrap": true
+        }
+      ]
+    },
+    {% include '/templates/candidate_card.txt' %}
+  ]
+}

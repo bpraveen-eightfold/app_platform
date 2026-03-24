@@ -1,0 +1,4 @@
+requests
+jinja2
+google-api-python-client
+google

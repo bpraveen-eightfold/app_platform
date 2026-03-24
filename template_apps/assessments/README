@@ -1,0 +1,16 @@
+  _____ _       _     _    __       _     _      _                  ____  _       _    __                      
+ | ____(_) __ _| |__ | |_ / _| ___ | | __| |    / \   _ __  _ __   |  _ \| | __ _| |_ / _| ___  _ __ _ __ ___  
+ |  _| | |/ _` | '_ \| __| |_ / _ \| |/ _` |   / _ \ | '_ \| '_ \  | |_) | |/ _` | __| |_ / _ \| '__| '_ ` _ \ 
+ | |___| | (_| | | | | |_|  _| (_) | | (_| |  / ___ \| |_) | |_) | |  __/| | (_| | |_|  _| (_) | |  | | | | | |
+ |_____|_|\__, |_| |_|\__|_|  \___/|_|\__,_| /_/   \_\ .__/| .__/  |_|   |_|\__,_|\__|_|  \___/|_|  |_| |_| |_|
+          |___/                                      |_|   |_|                                                 
+
+
+	Welcome to the assessment starter package! 🎉🎉🎉
+
+	There are three main files that you must include in your app:
+		- requirements.txt --> list of required pip modules
+		- lambda_function.py --> keep the same name for this file. This file contains all the triggers that are available for you to use in your assessment app. 
+       		- package_ef_app.py --> This file contains the packaging script for your app. Learn more here: https://docs.eightfold.ai/app-platform-basics/packaging-your-app 
+
+    	You can utilize this starter package as a boilerplate for your assessment integration with Eightfold. To learn more about the Eightfold developer platform, read the app platform docs: https://docs.eightfold.ai/sdk-main

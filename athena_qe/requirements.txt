@@ -1,0 +1,7 @@
+boto3
+glog
+pysftp
+jsonschema
+pandas
+# This version provides required encrypt_file function.
+python-gnupg==0.4.6

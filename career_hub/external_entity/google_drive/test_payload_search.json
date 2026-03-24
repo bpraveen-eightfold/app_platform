@@ -1,0 +1,7 @@
+{
+    "trigger_name": "careerhub_entity_search_results",
+    "request_data": {
+        "oauth_token": "FIX_ME - Use https://developers.google.com/oauthplayground",
+        "term": "running"
+    }
+}

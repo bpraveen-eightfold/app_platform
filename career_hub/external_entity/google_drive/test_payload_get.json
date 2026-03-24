@@ -1,0 +1,7 @@
+{
+    "trigger_name": "careerhub_get_entity_details",
+    "request_data": {
+        "oauth_token": "FIX_ME - Use https://developers.google.com/oauthplayground",
+        "entity_id": "1VlzhLkjjTJvmkTkPBrHURJ-IApIPZ8G0HGTOoj1o0sY"
+    }
+}

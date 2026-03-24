@@ -1,0 +1,8 @@
+requests==2.25.1
+paramiko==3.4.0
+six==1.16.0
+glog==0.3.1
+pytz==2022.7
+python-dateutil==2.8.1
+redshift-connector==2.0.909
+marshmallow==3.19.0

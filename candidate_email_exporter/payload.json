@@ -1,0 +1,22 @@
+{
+    "app_settings": {
+        "oauth_username": "demo@eightfolddemo-dthakur.com",
+        "oauth_password": "lrwwavaeerxjwwsmgepsjsaspsuqvxfy",
+        "region": "us",
+        "exporter_config": [{
+            "exporter": ["sftp"],
+            "id_rsa.pub": "",
+            "id_rsa": "-----BEGIN RSA PRIVATE KEY-----\n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\n-----END RSA PRIVATE KEY-----",
+            "hostname": "sftp.eightfold.ai",
+            "username": "eightfolddemo-master",
+            "sftp_path": "/ef-sftp/eightfolddemo-master/home",
+            "result_filename_prefix": "-eightfold",
+            "exporter_frequency": "DAILY",
+            "timestamp_format": "%Y-%m-%d",
+            "suffix": "",
+            "mapping_file_name": "candidate_mapping_"
+        }]
+    },
+    "trigger_name": "scheduled_daily",
+    "group_id": "eightfolddemo-dthakur.com"
+}

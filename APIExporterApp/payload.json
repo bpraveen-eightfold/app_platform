@@ -1,0 +1,151 @@
+{
+  "trigger_name": "scheduled_weekly",
+  "group_id": "gdit.com",
+  "app_settings": {
+    "oauth_username": "demo@gdit.com",
+    "oauth_password": "",
+    "region": "gov",
+    "exporter_config": [
+      {
+        "exporter": [
+          "sftp"
+        ],
+        "entity": "employee",
+        "field": "education",
+        "add_alumni": true,
+        "report": "",
+        "id_rsa.pub": "",
+        "id_rsa": "",
+        "hostname": "sftp-gov.eightfold.ai",
+        "username": "gdit-certification-prod",
+        "sftp_path": "test_api_extract/",
+        "result_fields_separator": ",",
+        "result_filename_prefix": "gdit_employee_education_data_%D",
+        "exporter_frequency": "WEEKLY",
+        "extension": "csv",
+        "timestamp_format": "%Y-%m-%d",
+        "suffix": ""
+      },
+      {
+        "exporter": [
+          "sftp"
+        ],
+        "entity": "employee",
+        "field": "skills",
+        "add_alumni": true,
+        "report": "",
+        "id_rsa.pub": "",
+        "id_rsa": "",
+        "hostname": "sftp-gov.eightfold.ai",
+        "username": "gdit-certification-prod",
+        "sftp_path": "test_api_extract/",
+        "result_fields_separator": ",",
+        "result_filename_prefix": "gdit_employee_skills_data_%D",
+        "exporter_frequency": "WEEKLY",
+        "extension": "csv",
+        "timestamp_format": "%Y-%m-%d",
+        "suffix": ""
+      },
+      {
+        "exporter": [
+          "sftp"
+        ],
+        "entity": "employee",
+        "field": "experiences",
+        "add_alumni": true,
+        "report": "",
+        "id_rsa.pub": "",
+        "id_rsa": "",
+        "hostname": "sftp-gov.eightfold.ai",
+        "username": "gdit-certification-prod",
+        "sftp_path": "test_api_extract/",
+        "result_fields_separator": ",",
+        "result_filename_prefix": "gdit_employee_experiences_data_%D",
+        "exporter_frequency": "WEEKLY",
+        "extension": "csv",
+        "timestamp_format": "%Y-%m-%d",
+        "suffix": ""
+      },
+      {
+        "exporter": [
+          "sftp"
+        ],
+        "entity": "employee",
+        "field": "employeeId",
+        "add_alumni": true,
+        "report": "",
+        "id_rsa.pub": "",
+        "id_rsa": "",
+        "hostname": "sftp-gov.eightfold.ai",
+        "username": "gdit-certification-prod",
+        "sftp_path": "test_api_extract/",
+        "result_fields_separator": ",",
+        "result_filename_prefix": "gdit_employee_email_employee_id_data_%D",
+        "exporter_frequency": "WEEKLY",
+        "extension": "csv",
+        "timestamp_format": "%Y-%m-%d",
+        "suffix": ""
+      },
+      {
+        "exporter": [
+          "sftp"
+        ],
+        "entity": "employee",
+        "field": "certificates",
+        "add_alumni": true,
+        "report": "",
+        "id_rsa.pub": "",
+        "id_rsa": "",
+        "hostname": "sftp-gov.eightfold.ai",
+        "username": "gdit-certification-prod",
+        "sftp_path": "test_api_extract/",
+        "result_fields_separator": ",",
+        "result_filename_prefix": "gdit_employee_certification_data_%D",
+        "exporter_frequency": "WEEKLY",
+        "extension": "csv",
+        "timestamp_format": "%Y-%m-%d",
+        "suffix": ""
+      },
+      {
+        "exporter": [
+          "sftp"
+        ],
+        "entity": "employee",
+        "field": "languages",
+        "add_alumni": true,
+        "report": "",
+        "id_rsa.pub": "",
+        "id_rsa": "",
+        "hostname": "sftp-gov.eightfold.ai",
+        "username": "gdit-certification-prod",
+        "sftp_path": "test_api_extract/",
+        "result_fields_separator": ",",
+        "result_filename_prefix": "gdit_employee_languages_data_%D",
+        "exporter_frequency": "WEEKLY",
+        "extension": "csv",
+        "timestamp_format": "%Y-%m-%d",
+        "suffix": ""
+      },
+      {
+        "exporter": [
+          "sftp"
+        ],
+        "entity": "employee",
+        "field": "resumeFileName",
+        "add_alumni": true,
+        "report": "",
+        "id_rsa.pub": "",
+        "id_rsa": "",
+        "hostname": "sftp-gov.eightfold.ai",
+        "username": "gdit-certification-prod",
+        "sftp_path": "test_api_extract/",
+        "result_fields_separator": ",",
+        "result_filename_prefix": "gdit_employee_resume_data_%D",
+        "exporter_frequency": "WEEKLY",
+        "extension": "csv",
+        "timestamp_format": "%Y-%m-%d",
+        "suffix": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+certifi==2020.12.5
+chardet==4.0.0
+idna==2.10
+pylint==2.7.4
+pytest==6.2.3
+requests==2.25.1
+urllib3==1.26.4
+pycountry==20.7.3
+git+ssh://git@github.com/seatgeek/thefuzz.git@0.19.0#egg=thefuzz

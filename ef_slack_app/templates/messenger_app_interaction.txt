@@ -1,0 +1,18 @@
+{
+	"blocks":[
+		{
+			"type": "section",
+			"text": {
+				"type": "plain_text",
+				"text": "Welcome to the Eightfold Slack App!"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "plain_text",
+				"text": "You will be receiving all Eightfold notifications through this app."
+			}
+		}
+	]
+}

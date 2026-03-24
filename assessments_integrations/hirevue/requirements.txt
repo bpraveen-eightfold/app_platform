@@ -1,0 +1,7 @@
+# add pip modules here
+
+requests
+six
+pytz
+traceback2
+python-dateutil

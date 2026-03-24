@@ -1,0 +1,82 @@
+{
+	"blocks":[
+		{
+			"type": "section",
+			"text": {
+				"type": "plain_text",
+				"text": "Hello {{json_str(reviewer.get('fullName'))}}"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "plain_text",
+				"text": "Please click the Provide Feedback button below to review the candidate profile and leave a quick feedback."
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "*{{'Community' if position.get('positionType') == 'TalentCommunity' else 'Position'}}*: {{json_str(position.get('name'))}}"
+			}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "Thanks,
+						{{json_str(requester.get('fullName'))}}"
+			}
+		},
+		{
+			"type": "divider"
+		},
+		{
+			"type": "section",
+			"text":{
+					"type": "mrkdwn",
+					"text": "<https://{{ requester.get('domain') }}/profile/{{ candidate.get('encId') }}?back=/interview_feedback/{% if position.get('positionId') %}&pid={{ position.get('positionId') }}{%endif%}|*{{json_str(candidate.get('fullName'))}}*>
+					{{json_str(candidate.get('title'))}}
+					{{json_str(candidate.get('location'))}}"
+			}
+		},
+		{% set exp_years = candidate.get('workExperienceYears')|round|int %}
+			{
+				"type": "section",
+				"text": {
+					"type": "mrkdwn",
+					"text": "{% if exp_years > 0 %}*{{ exp_years|round|int }} Years Experience*{% endif %} {% for exp in candidate.get('experiences') %}{% if loop.index <= 3 %}
+							{{json_str(exp.get('title'))}}, {{json_str(exp.get('work'))}} {% if exp.get('durationMonths') > 12 %}{{ (exp.get('durationMonths')/12)|round|int }} Years{% elif exp.get('durationMonths') > 0 %}{{ exp.get('durationMonths') }} Months{% endif %}{% endif %}{% endfor %}"
+				}
+			},
+		{% if candidate.get('skills') %}
+			{
+				"type": "section",
+				"text":{
+						"type": "mrkdwn",
+						"text": "*Skills:*
+						{{ ', '.join(json_str(candidate.get('skills')[:10])) }}"
+				}
+			},
+		{% endif %}
+		{
+			"type": "divider"
+		},
+		{
+			"type": "actions",
+			"elements": [
+				{
+					"type": "button",
+					"text": {
+						"type": "plain_text",
+						"text": "Provide Feedback"
+					},
+					"style": "primary",
+					"url": "{{feedback_url}}",
+					"action_id": "feedback_requested_button"
+				}
+			]
+		}
+	]
+}

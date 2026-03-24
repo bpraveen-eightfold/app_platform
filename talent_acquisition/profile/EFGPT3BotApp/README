@@ -1,0 +1,17 @@
+  ______   ______      _____   _____    _______   ____      ____            _   
+ |  ____| |  ____|    / ____| |  __ \  |__   __| |___ \    |  _ \          | |  
+ | |__    | |__      | |  __  | |__) |    | |      __) |   | |_) |   ___   | |_ 
+ |  __|   |  __|     | | |_ | |  ___/     | |     |__ <    |  _ <   / _ \  | __|
+ | |____  | |        | |__| | | |         | |     ___) |   | |_) | | (_) | | |_ 
+ |______| |_|         \_____| |_|         |_|    |____/    |____/   \___/   \__|
+                                                                                                                             
+															     
+	Hello to the world of the GPT3 Bot. This bot can today suggest interesting questions to ask any candidate.
+
+	2 main files:
+		- requirements.txt --> pip module requirements
+		- lambda_function.py --> app code to be executed on AWS lambda
+
+	karan@eightfold.ai
+	pbahukhandi@eightfold.ai
+	rjain@eightfold.ai

@@ -1,0 +1,31 @@
+{
+  "app_settings": {
+    "oauth_username": "import@zebra.com",
+    "oauth_password": "tsdygwjutbpsqupzdfqqywztooppmelw",
+    "region": "us",
+    "exporter_config": [
+      {
+        "exporter": [
+          "sftp"
+        ],
+        "entity": "profile",
+        "field": "careerSiteQuestions",
+        "report": "",
+        "id_rsa.pub": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCa4qhVHx+onsA6Vd7dsUp52rqXKyBWR+UNMLDefAsaa4bJrfzxoSfDKZtlfKSy9IfaGjfM4iFpg78BNPDryvjVdy/gWOH4nfB2xxyxhmji2CY2LKeCHE/P1+G1WBabQyL42LwTxC4ue5SDYrg6DHKOrmrForBZvnY6dcwCg7682YA494ZgcnzL2QlKRCbyXEqwSbGgTnZNcG5dkgl0LF48qxy8TlTLRR/eSCreXkeFCzSKJt9C2/Z9PEB4jbY7iWO10d9xzaUsq1rY8QmhoMphhGp3zWiLuKD160OH5yFKzkjHzIOmyxNw++ipMOK2c2Fg9e64cor8PejjDYezv0Qz",
+        "id_rsa": "-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABFwAAAAdzc2gtcn\nNhAAAAAwEAAQAAAQEAmuKoVR8fqJ7AOlXe3bFKedq6lysgVkflDTCw3nwLGmuGya388aEn\nwymbZXyksvSH2ho3zOIhaYO/ATTw68r41Xcv4Fjh+J3wdsccsYZo4tgmNiynghxPz9fhtV\ngWm0Mi+Ni8E8QuLnuUg2K4Ogxyjq5qxaKwWb52OnXMAoO+vNmAOPeGYHJ8y9kJSkQm8lxK\nsEmxoE52TXBuXZIJdCxePKscvE5Uy0Uf3kgq3l5HhQs0iibfQtv2fTxAeI22O4ljtdHfcc\n2lLKta2PEJoaDKYYRqd81oi7ig9etDh+chSs5Ix8yDpssTcPvoqTDitnNhYPXuuHKK/D3o\n4w2Hs79EMwAAA+i3y1Vjt8tVYwAAAAdzc2gtcnNhAAABAQCa4qhVHx+onsA6Vd7dsUp52r\nqXKyBWR+UNMLDefAsaa4bJrfzxoSfDKZtlfKSy9IfaGjfM4iFpg78BNPDryvjVdy/gWOH4\nnfB2xxyxhmji2CY2LKeCHE/P1+G1WBabQyL42LwTxC4ue5SDYrg6DHKOrmrForBZvnY6dc\nwCg7682YA494ZgcnzL2QlKRCbyXEqwSbGgTnZNcG5dkgl0LF48qxy8TlTLRR/eSCreXkeF\nCzSKJt9C2/Z9PEB4jbY7iWO10d9xzaUsq1rY8QmhoMphhGp3zWiLuKD160OH5yFKzkjHzI\nOmyxNw++ipMOK2c2Fg9e64cor8PejjDYezv0QzAAAAAwEAAQAAAQBZtj9aTpS/znP5VhOo\nxTAmNJMvTEOGtk3tve40cBTeULnZx3VjX7zwRgFEX1Xmcczef6EigzhnLXBM+qUxbneC7W\n5FvDXnE1Rc+CeejAPkoN5BMswziMKR2LFboJI3jEONb7xAlrlJIzt6fovG077m9g/SOdF7\nqd5BLknkivrH1yzCYCiTg76wTeBf4/QumJJINgFzyFvj9YHIIuaZIndMKPpT4jCMwtjXo0\n5nCk3UnSGXN8HrVceVewL7LlVRhJGu5K9nryDVxjwghDlsoBR1edXFrkRu86dtfn+8WeLE\nHYfZM8nLpZ8e9EBlXlJRFyTTX+LKZeagznuNbLDHqnWBAAAAgEXUFoxxGY3qQ5DmBDH8U5\nAksdAeWa9hQRY8QKFNtTdhJ8GCW+7VfuWYhzuiv2BPuCF03gCRjrRCse3ZFLtk7UtSeMfb\neqoECtbbpf4Pgq5MS4gBExZUexQwDexRzn12YEIp+MOTivT4RFV30A2NdCGuPbZRP2hSaf\n4YP5siDlzFAAAAgQDKGwI82GJxjkUfQFKHs1W1LTlp1al0NM0sH8E4guzv6WI0JibUUWyy\nd1MRzfLIZ9vzwp/NuA4sh8MUL9wMx/CD5Dh7OeA7eP6S5XEYinxiuYoH9OsmeYgq8J66TS\n4SKTyhbQ6PmFW7ggOyhk7yGrlVXHojKsgUFI3cEM8XPPbkuQAAAIEAxDAbTZtm8ejzdTHk\nic9sAcmTiIV3a922lrEGSmn770dcEk/u0qa1zn+IBWjzGQuFv9wgxM1hz+zudeLTG8adp4\nYhytvXjxx0fy3RqkzeJxe5IrCbg2zTyIE9VySlUZzmcFUbRO8CMTgot+D2Y76tb7P0xE74\nM6LdcqfITC3fUksAAAAvY2hyaXN0b3BoZXJhcm9raWFyYWpAQ2hyaXMtQXMtTWFjQm9vay\n1Qcm8ubG9jYWwBAgME\n-----END OPENSSH PRIVATE KEY-----",
+        "hostname": "sftp.eightfold.ai",
+        "username": "zebra",
+        "sftp_path": "smartapply_questionnaire_extract/",
+        "result_fields_separator": ",",
+        "result_filename_prefix": "zebra_candidates_careerSiteQuestions_%D",
+        "exporter_frequency": "DAILY",
+        "extension": "csv",
+        "timestamp_format": "%Y-%m-%d",
+        "suffix": ""
+      }
+    ]
+  },
+
+  "trigger_name": "scheduled_daily",
+  "group_id": "zebra.com"
+}

@@ -1,0 +1,30 @@
+{
+    "method": "sftp",
+    "private_key": "-----BEGIN RSA PRIVATE KEY-----\nsomerandomkey\n-----END RSA PRIVATE KEY-----",
+    "destination": "/ef-sftp/eightfolddemo-unittest/home",
+    "hostname": "sftp.eightfold.ai",
+    "username": "eightfolddemo-unittest",
+    "num_items_per_file": 10000,
+    "api_auth_token": "Basic randomauthentoken",
+    "api_host": "https://stage-apiv2.eightfold.ai",
+    "to_export_tables": [
+        "positions",
+        "profiles",
+        "profile-tags",
+        "profile-notes"
+    ],
+    "incremental_delivery_enable": 1,
+    "redshift_user": "volkscience_user",
+    "redshift_password": "Q9cbVw5UWF2Q6Jk52B8AxOzNArcrKrXe",
+    "export_data_format": "jsonl",
+    "compression_type": "zip",
+    "output_file_formats": {
+        "positions": "EFLD.COF.HRDW.PROD.{output_date_format}_0_position",
+        "profiles": "EFLD.COF.HRDW.PROD.{output_date_format}_1_profile",
+        "profile-tags": "EFLD.COF.HRDW.PROD.{output_date_format}_2_profile_tags",
+        "profile-notes": "EFLD.COF.HRDW.PROD.{output_date_format}_3_profile_notes"
+    },
+    "output_date_format": "%Y%m%d_%H%M%S",
+    "delimiter": "\\x01",
+    "meta_extension": "meta"
+}

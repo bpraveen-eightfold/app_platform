@@ -1,0 +1,4 @@
+# add pip modules here
+
+requests
+aiohttp

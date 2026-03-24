@@ -1,0 +1,103 @@
+{% block css %}
+  <style>
+    .profile-module-header, .slim-profile {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 4px;
+      margin: 0px 0px 16px 0px;
+    }
+
+    .profile-module-header img, .slim-profile img {
+      width: auto;
+      margin-right: 16px;
+      height: 36px !important;
+    }
+
+    .slim-profile img {
+      border-radius: 50%;
+    }
+
+    p.body-text-2 {
+      color: rgba(0, 0, 0, 0.60) !important;
+    }
+
+    .action-buttons {
+      margin-top: 24px;
+    }
+
+/*    .action-buttons button {
+      flex: 1 1;
+    }*/
+
+    .action-buttons button:first-child {
+      margin-left: 0px;
+    }
+
+    .profile-module-footer-perf {
+      margin-top: 20px;
+    }
+
+    .profile-module-footer-perf p {
+      text-align: left;
+      color: rgba(0, 0, 0, 0.60) !important;
+    }
+  </style>
+{% endblock %}
+
+{% block body %}
+  <div class="ef-styles-2020 profile-module-container">
+    <div class="profile-module-header">
+      <img src={{data.logo_url}} />
+      <div class="title-container">
+        <h3>
+          {{data.title}}
+        </h3>
+        {% if data.subtitle %}
+          <p class="body-text-2 line-clamp line-clamp-1">
+            {{data.subtitle}}
+          </p>
+        {% endif %}
+      </div>
+    </div>
+    {% if data.error %}
+      <div class="profile-module-error-body">
+        <p> {{data.error}} </p>
+      </div>
+    {% else %}
+      <div class="profile-module-body">
+        {% if data.manager_profile %}
+          <div class="slim-profile">
+            <img src={{data.manager_profile.image_url}} />
+            <div>
+              <h5>
+                {{data.manager_profile.fullname}}
+              </h5>
+              <p class="body-text-2">
+                {{data.manager_profile.title}}
+              </p>
+            </div>
+          </div>
+        {% endif %}
+        {% if data.action_buttons %}
+          <div class="action-buttons">
+            {% for action_button in data.action_buttons %}
+              <button
+                class="btn btn-block btn-sm btn-secondary action-button"
+                onClick={{action_button.onClick}}
+              >
+                {{action_button.label}}
+              </button>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+      {% if data.footer %}
+        <div class="profile-module-footer-perf">
+          <p class="body-text-3">{{data.footer}}</p>
+        </div>
+      {% endif %}
+    {% endif %}
+  </div>
+{% endblock %}

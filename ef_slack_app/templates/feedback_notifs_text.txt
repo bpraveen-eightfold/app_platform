@@ -1,0 +1,6 @@
+{% if trigger_name == 'feedback_requested' %}{{requester.get('fullName')}} has requested feedback for the candidate {{candidate.get('fullName')}}
+{% elif trigger_name == 'feedback_submitted' %}{{reviewer.get('fullName')}} has submitted feedback for the candidate {{candidate.get('fullName')}}
+{% elif trigger_name == 'feedback_reminder' %}Feedback reminder for the candidate {{candidate.get('fullName')}}
+{% elif trigger_name == 'feedback_cancelled' %}Feedback request cancelled for the candidate {{candidate.get('fullName')}}
+{% elif trigger_name == 'messenger_app_interaction' %}Welcome to the Eightfold Slack App!
+{% endif %}
