@@ -1,0 +1,81 @@
+{% block body %}
+ <iframe srcdoc="
+ <style>
+   .twitter-embeds-container {
+    margin-top: -10px !important
+   }
+
+   .twitter-embed-header {
+    background: white;
+    margin: 0 !important
+   }
+
+  .twitter-title-container {
+    text-align: center; 
+    color: rgba(0, 0, 0, 0.60) !important;
+    font-family: Source Sans Pro !important;
+    -webkit-font-smoothing: antialiased !important;
+    font-weight: 400 !important;
+    text-transform: capitalize;
+    margin: 0 !important;
+    position:fixed;
+    z-index:1000;
+    width:100%;
+    background:white
+  }
+
+  h2 .title {
+    margin: 0 !important;
+    color: rgb(54,71,89);
+    font-weight: 400 !important;
+    height: 50px !important;
+  }
+
+  .twitter-app-outer-container {
+    width: 900px;
+    overflow-x: scroll;
+    position: absolute;
+    margin-top: 60px !important
+  }
+
+  .twitter-app-inner-container {
+    height: 100%;
+    white-space: nowrap;
+  }
+
+  .embed-html-container {
+    display: inline-block;
+    width: 350px;
+    padding: 10px;
+    vertical-align:top;
+  }
+ </style>
+
+ <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
+   <div class='twitter-embeds-container'>
+     <div class='twitter-embed-header'>
+       <!-- <img src={{data.logo_url}} /> -->
+       <div class='twitter-title-container'>
+         <h2 class='title'>
+           {{data.title}}
+         </h2>
+         {% if data.subtitle %}
+           <p class='body-text-2 line-clamp line-clamp-1'>
+             {{data.subtitle}}
+           </p>
+         {% endif %}
+       </div>
+     </div>
+     <div class='twitter-app-outer-container'> 
+       <div class='twitter-app-inner-container'>
+          {% for embed_html in data.embed_htmls %}
+              <div class='embed-html-container'>
+                  {{embed_html}}
+              </div>
+          {% endfor %}
+       </div>
+     </div>
+   </div>" style='height: 400px; width: 100%; border: 0; margin:0px !important'>
+  </iframe>
+ {% endblock %}

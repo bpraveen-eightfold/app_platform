@@ -1,0 +1,58 @@
+{% block body %}
+<iframe srcdoc="
+  <style>
+  .glassdoor-container{
+    text-align:center;
+    margin-top:-10px;
+  }
+  .glassdoor-embed-header{
+    background:white;
+    margin:0 !important;
+    width:320px !important;
+    padding-bottom: 50px !important;
+  }
+  .glassdoor-embed-header .title-container{
+    text-align:center;
+    color:rgba(0, 0, 0, 0.60) !important;
+    font-family:Source Sans Pro !important;
+    -webkit-font-smoothing:antialiased !important;
+    font-weight:400 !important;
+    text-transform: capitalize;
+    margin:0 !important;
+    position:fixed;
+    z-index:1000;
+    width:100%;
+    background:white;
+  }
+  .glassdoor-embed-header .title-container .title-header-text{
+    margin:0 !important;
+    color:rgb(54,71,89);
+    font-weight: 400 !important;
+    height: 50px !important;
+  }
+  .glassdoor-embed-body{
+    width:280px;
+    margin:0 auto;
+  }
+  </style>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <div class='glassdoor-container'> 
+    <div class='glassdoor-embed-header'>
+      <!-- <img src={{data.logo_url}} /> -->
+      <div class='title-container'>
+        <h2 class='title-header-text'>
+          {{data.title}}
+        </h2>
+        {% if data.subtitle %}
+          <p class='body-text-2 line-clamp line-clamp-1'>
+            {{data.subtitle}}
+          </p>
+        {% endif %}
+      </div>
+    </div>
+    <div class='glassdoor-embed-body'>
+      {{data.embed_htmls}}
+    </div>
+  </div>" style='height: 400px; width: 100%; border: 0; margin:0px !important'>
+</iframe>
+{% endblock %}
